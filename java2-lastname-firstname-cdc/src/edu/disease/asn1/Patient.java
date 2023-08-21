@@ -33,6 +33,8 @@ public class Patient {
         this.exposureCount = 0;
         this.diseaseCount = 0;
     }
+    
+    
 
     /**
      * Adds a disease ID to the patient's list of disease IDs.

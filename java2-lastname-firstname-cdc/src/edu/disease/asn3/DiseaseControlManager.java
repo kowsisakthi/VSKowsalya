@@ -1,11 +1,7 @@
-package edu.disease.asn2;
+package edu.disease.asn3;
 
 import java.util.UUID;
-import edu.disease.asn1.Exposure;
 
-/**
- * An interface for managing diseases and patients.
- */
 public interface DiseaseControlManager {
 
 	/**
@@ -65,4 +61,19 @@ public interface DiseaseControlManager {
 	 * @throws IllegalArgumentException if the patient is not found.
 	 */
 	public void addExposureToPatient(UUID patientId, Exposure exposure);
+
+	/**
+	 * Gets the array of Disease objects stored in this container.
+	 *
+	 * @return The array of Disease objects, or null if no diseases are stored.
+	 */
+	public Disease[] getDisease();
+
+	/**
+	 * Gets the array of Patient objects stored in this container.
+	 *
+	 * @return The array of Patient objects, or null if no patients are stored.
+	 */
+
+	public Patient[] getPatient();
 }

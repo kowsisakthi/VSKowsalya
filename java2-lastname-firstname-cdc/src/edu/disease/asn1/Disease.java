@@ -52,6 +52,7 @@ public class Disease {
 	public void setName(String name) {
 		this.name = name;
 	}
+	
 
 	/**
 	 * Generates a hash code value for this Disease object. The hash code is

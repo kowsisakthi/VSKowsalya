@@ -47,6 +47,7 @@ public class DiseaseControlManagerImpl implements DiseaseControlManager {
         patientCount = 0;
     }
 
+    
     /**
      * Adds a disease to the disease database.
      *

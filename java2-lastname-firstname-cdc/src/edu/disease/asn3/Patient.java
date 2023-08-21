@@ -1,16 +1,18 @@
-package edu.disease.asn2;
+package edu.disease.asn3;
 
+import java.io.Serializable;
 import java.util.Arrays;
 import java.util.Objects;
 import java.util.UUID;
 
-import edu.disease.asn1.Exposure;
-
 /**
  * Represents a patient with related properties and methods.
+ * This class is implemented the Comparable,Serializable.
  */
-public class Patient implements Comparable<Patient>{
-    private UUID patientId;
+public class Patient implements Comparable<Patient>,Serializable{
+    
+	private static final long serialVersionUID = 1L;
+	private UUID patientId;
     private String firstName;
     private String lastName;
     private Exposure[] exposures;
@@ -201,3 +203,4 @@ public class Patient implements Comparable<Patient>{
 	}
 
 }
+

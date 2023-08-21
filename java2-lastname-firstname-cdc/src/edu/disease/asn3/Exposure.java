@@ -1,14 +1,19 @@
-package edu.disease.asn1;
+package edu.disease.asn3;
 
+import java.io.Serializable;
 import java.time.LocalDateTime;
 import java.util.Objects;
 import java.util.UUID;
 
-/*
- * This class represents an Exposure object, storing information about a patient's exposure event.
- * It stores basic information such as patientld,dateTime,exposureType.
+/**
+ * This class represents an Exposure object and implements Serializable.
  */
-public class Exposure {
+public class Exposure implements Serializable {
+	
+	private static final long serialVersionUID = 1L;
+	/**
+	 * 
+	 */
 	/**
 	 * The UUID of the patient associated with this exposure.
 	 */
@@ -126,3 +131,4 @@ public class Exposure {
 	}
 
 }
+

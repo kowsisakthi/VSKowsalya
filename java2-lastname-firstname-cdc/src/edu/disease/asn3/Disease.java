@@ -1,14 +1,16 @@
-package edu.disease.asn2;
+package edu.disease.asn3;
 
+import java.io.Serializable;
 import java.util.Objects;
 import java.util.UUID;
 
 /**
- * This abstract class represents an Disease object and inside the class declare
- * the abstarct method getExamples. It stores basic information such as
- * diseaseld,name.
+ * This abstract class represents an Disease object and implements the serializable.
  */
-public abstract class Disease {
+public abstract class Disease implements Serializable{
+
+
+	private static final long serialVersionUID = 1L;
 	/**
 	 * The UUID representing a disease identifier.
 	 */
